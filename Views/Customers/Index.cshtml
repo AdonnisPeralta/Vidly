@@ -1,0 +1,9 @@
+﻿@model vidly.ViewModels.CustomerViewModel
+
+<h1>Customers</h1>
+<div class="list-group">
+    @foreach (var customer in Model.Customers)
+    {
+        <a href="Detail/@customer.Id" class="list-group-item list-group-item-action">@customer.Name</a>
+    }
+</div>
